@@ -8,7 +8,7 @@ import java.util.List;
 public class Deportista {
     @Id @GeneratedValue
     private Long id;
-    @Column(name="altura", columnDefinition="DECIMAL")
+    @Column(name="altura", columnDefinition="DOUBLE")
     private Double altura;
     @Column(name="apellido")
     private String apellido;
