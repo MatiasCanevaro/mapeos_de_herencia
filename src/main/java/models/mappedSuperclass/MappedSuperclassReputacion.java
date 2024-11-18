@@ -5,7 +5,7 @@ import javax.persistence.*;
 @MappedSuperclass
 public abstract class MappedSuperclassReputacion {
     @Id
-    @GeneratedValue(strategy = GenerationType.TABLE)
+    @GeneratedValue
     private Long id;
 
     public abstract void recibirCalificacion();

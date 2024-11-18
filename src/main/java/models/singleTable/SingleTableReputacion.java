@@ -8,7 +8,7 @@ import javax.persistence.*;
 @DiscriminatorColumn(name = "tipo")
 public abstract class SingleTableReputacion {
     @Id
-    @GeneratedValue()
+    @GeneratedValue
     private Long id;
     @Column
     private String uno;
