@@ -19,8 +19,8 @@ public class Deportista {
             inverseJoinColumns = @JoinColumn(name = "contacto_id", referencedColumnName = "id")
     )
     private List<Contacto> contactos;
-    @ManyToOne
-    @JoinColumn(name="motivacion_id", referencedColumnName = "id")
+    @Convert(converter = MotivacionConverter.class)
+    @Column(name = "tipo")
     private Motivacion motivacionPrincipal;
     @Column(name="nombre")
     private String nombre;
